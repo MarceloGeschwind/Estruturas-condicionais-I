@@ -9,11 +9,7 @@ lado3 = int(input('Fala o lado 3: '))
 
 if lado1 == lado2 == lado3:
     print('Equilátero.')
-elif lado1 == lado2 != lado3:
+elif lado1 == lado2 or lado2 == lado3 or lado1 == lado3:
     print('Isósceles.')
-elif lado1 != lado2 == lado3:
-    print('Isósceles.')
-elif lado2 == lado1 != lado3:
-    print('Isósceles.')
-elif lado1 != lado2 != lado3:
-    print('Isósceles.')
+else:
+    print('Escaleno.')

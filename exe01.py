@@ -5,8 +5,8 @@ numero = float(input('Fala um numero:'))
 numero2 = float(input('Fala outro numero:'))
                 
 if numero > numero2:
-    print('O primeiro numero é maior.')
+    print('O numero 1 [{}] é maior que o numero 2 [{}].'.format(numero, numero2))
 elif numero2 > numero :
-    print('O segundo numero é maior.')
+    print('O numero 2 [{}] é maior que o numero 1 [{}].'.format(numero, numero2))
 elif numero2 == numero :
-    print('Eles são iguais.')
+    print('o numero 1 [{}] e o número 2 [{}]'.format(numero,numero2))

@@ -9,3 +9,14 @@ if senha == senhacorreta:
     print('Senha valida.')
 else:
     print('Senha invalida.')
+
+'''jeito salt'''
+while(True):
+    senha = input('Digite a senha: ')
+
+    if senha != 'ort123':
+        print('Senha inválida')
+    else:
+        ('Senha correta')
+        break
+print('fim do programa.')

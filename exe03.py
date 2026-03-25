@@ -6,25 +6,20 @@ aprovado (média ≥ 7);
 reprovado (média < 3);
 prova final ( 3 ≤ média < 7).
 '''
-n1 = float(input('Nota1:'))
-
-n2 = float(input('Nota2:'))
-
-n3 = float(input('Nota3:'))
+def captura_nota(tipo_nota):
+    while(True):
+        nota = float(input('Informe a nota{}'.format(tipo_nota)))
+        if 0 > nota or nota > 10:
+            print('Valor inválido, a nota deve ser entre 0 - 10.')
+        else:
+            print('Nota gravada.')
+            return nota
+        
+n1 = captura_nota(' N1 ')
+n2 = captura_nota(' N2 ')
+n3 = captura_nota(' N3' )
 
 media = (n1 + n2 + n3)/3
-
-if n1 > 10:
-    print('N1 invalida') 
-    sys.exit
-if n2 > 10:
-    print('N2 invalida') 
-    sys.exit
-if n3 > 10:
-    print('N3 invalida') 
-    sys.exit
-elif n1<=10 and n1<=10 and n1<=10 :
-    print('Ok.')
 
 if media >= 7:
     print('Aprovado.') 
